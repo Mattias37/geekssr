@@ -30,6 +30,7 @@ export class LeagueService {
     return this.client.get(`/leagues/${id}/unregister`);
   }
   getLeagueById(id: string, userId: string) {
+    console.log('getLeagueById', id, userId)
     if( userId === null){
       return this.client.get(`/leagues/${id}`);
     } else {

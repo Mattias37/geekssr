@@ -47,7 +47,7 @@ const News = ({ news }) => {
             <Breadcrumb text='Noticias' type={2} />
                 {news.map((notice, i) => (
                     <Row key={i} className="mb-3 border-bottom">
-                        <Link href={`/news/${notice.id}`} passHref>
+                        <Link href={`/news/${notice.slug}`} passHref>
                             <Col role="button">
                                 <Row>
                                     <Col>

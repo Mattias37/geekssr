@@ -30,6 +30,7 @@ interface Props {
 }
 interface Publications {
   id: string;
+  slug: string;
   author: { name: string; id: string };
   category: string;
   title: string;
@@ -65,7 +66,7 @@ export const RowSliderNews = ({ publications }: Props) => {
                   }
                 }
               })
-              push(`/news/${product.id}`)
+              push(`/news/${product.slug}`)
               }}>
               <ProductImg
                 src={product.image}

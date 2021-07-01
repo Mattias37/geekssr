@@ -155,11 +155,12 @@ export const getPhases: AsyncAction = (id: string) => {
 };
 export const getLeagueSelected: AsyncAction = (id: string) => {
   return async (dispatch, getState, { LeagueService }) => {
+    console.log('LEAGUE SLUG', id)
     dispatch(setLeagueLoading(true));
     try {
       const userProfile = await getState()?.user?.profile?._id ?? null;
       console.log(userProfile);
-      const { data } = await LeagueService.getLeagueById(id, userProfile);
+      const { data } = await LeagueService.getLeagueById('torneo-cod-mobile-20', userProfile);
 
       if (data.code === 400) {
         throw data.message;

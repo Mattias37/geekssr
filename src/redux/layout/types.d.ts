@@ -36,6 +36,7 @@ interface Publications {
 
 interface ProductHome {
   _id: string;
+  slug: string;
   name: string;
   price: number;
   imgCenter: string;

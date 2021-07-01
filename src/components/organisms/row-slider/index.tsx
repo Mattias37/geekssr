@@ -57,7 +57,7 @@ export const RowSlider = ({ products }: Props) => {
                       }
                     }
                   })
-                  push(`/store/${product._id}`)
+                  push(`/store/${product.slug}`)
                 }}
               />
               <ProductName                 

@@ -8,7 +8,7 @@ const enhancers = [thunk.withExtraArgument(apiClient), /* , showError, showSucce
 export const AppMiddlewares = () => {
   let middlewares = compose(applyMiddleware(...enhancers));
   // eslint-disable-next-line no-undef
-  if (process.env.PUBLIC_API_STAGE === 'PROD') {
+  if (process.env.NEXT_PUBLIC_API_STAGE === 'PROD') {
     middlewares = composeWithDevTools(middlewares);
   }
   return middlewares;

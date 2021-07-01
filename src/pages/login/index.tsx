@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import MasterLayout from '../../components/templates/MaterLayout';
-import { RegisterScreen } from '../../components/organisms/registerScreen'
+import { LoginScreen } from '../../components/organisms/loginScreen'
 
 const SignIn = () => {
     return (
@@ -14,7 +14,7 @@ const SignIn = () => {
             <link rel="icon" href="/images/01.png" />
             </Head>
             <div>
-                <RegisterScreen />
+                <LoginScreen />
             </div>
         </>
     )

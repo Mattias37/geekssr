@@ -62,12 +62,12 @@ export const FooterMolecule = () => {
                 <h4 id="h2-home-slider">Nación E-Sports</h4>
                 <Row>
                   <Col>
-                    <NavFooterButton onClick={() => {dispatch( router.push('/'))}}> 
+                    <NavFooterButton onClick={() => { router.push('/')}}> 
                     <h5 className="style-h5">
                       Home
                     </h5>
                     </NavFooterButton>
-                    <NavFooterButton onClick={() => {dispatch( router.push('/leagues'))}}> 
+                    <NavFooterButton onClick={() => { router.push('/leagues')}}> 
                     <h5 className="style-h5">
                       Ligas
                     </h5>
@@ -89,19 +89,19 @@ export const FooterMolecule = () => {
                       Academia
                     </h5>
                     </NavFooterButton> */}
-                    <NavFooterButton onClick={() => {dispatch( router.push('/streaming'))}}> 
+                    <NavFooterButton onClick={() => {router.push('/streaming')}}> 
                     <h5 className="style-h5">
                       Streaming
                     </h5>
                     </NavFooterButton>
-                    <NavFooterButton onClick={() => {dispatch( router.push('/shop'))}}> 
+                    <NavFooterButton onClick={() => { router.push('/shop')}}> 
                     <h5 className="style-h5">
                       Tienda
                     </h5>
                     </NavFooterButton>
                   </Col>
                   <Col>
-                    <NavFooterButton onClick={() => {dispatch( router.push('/news'))}}> 
+                    <NavFooterButton onClick={() => {router.push('/news')}}> 
                     <h5 className="style-h5">
                       Noticias
                     </h5>
@@ -115,12 +115,12 @@ export const FooterMolecule = () => {
           <Row>
             <Col md="4" xs="12" lg="4">
               <div style={{display: 'flex', flexDirection: 'row'}}>
-                <NavFooterButton onClick={() => {dispatch( router.push('/terminos-y-condiciones'))}}> 
+                <NavFooterButton onClick={() => {router.push('/terminos-y-condiciones')}}> 
                   <h5 className="style-h5">
                       Términos & Condiciones
                   </h5>
                 </NavFooterButton> 
-                <NavFooterButton onClick={() => {dispatch( router.push('/politicas-de-privacidad'))}}> 
+                <NavFooterButton onClick={() => {router.push('/politicas-de-privacidad')}}> 
                   <h5 className="style-h5">
                     Políticas de privacidad
                   </h5>
