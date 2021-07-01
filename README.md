@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nación e-Sports || GeekCity
 
-## Getting Started
+## _Departamento de Tecnología_
 
-First, run the development server:
+[![Build Status](https://geekssr.vercel.app/images/01.png)](https://travis-ci.org/joemccann/dillinger)
 
-```bash
-npm run dev
-# or
+El front end de Nación e-Spoorts || GeekCity es una plataforma para el disfrute de la comunidad gamer.
+
+## Features
+
+- Home con acceso a los modulos
+- Ligas Nación e-Sports
+- Torneos Nación e-Sports
+- Torneos Comunidad
+- Streaming
+- Academia
+- Tienda
+- Noticias
+- Perfil
+
+## Tech
+
+El front esta hecho en Next.js, Typescript
+
+## Installation
+
+Primero copia el repositorio y luego instala las dependencias.
+
+```sh
+yarn intall
+```
+
+Crea un .env e incluye... || cambia PUBLIC_API_STAGE & NEXT_PUBLIC_API_STAGE a "PROD" para acceder a la base de datos de produccion y "DEV" para acceder a la base de datos de develop
+
+```sh
+PUBLIC_API_PROD ='https://api.nacionesports.com'
+PUBLIC_API_DEV='https://api-dev.nacionesports.com'
+PUBLIC_API_STAGE = 'PROD'
+NEXT_PUBLIC_API_PROD ='https://api.nacionesports.com'
+NEXT_PUBLIC_API_DEV='https://api-dev.nacionesports.com'
+NEXT_PUBLIC_API_STAGE = 'PROD'
+```
+
+## Commandos
+
+Localmente puedes mandar el comando:
+
+```sh
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```sh
+yarn start
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Para crear el build:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+```sh
+yarn build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## License
 
-## Learn More
+MIT
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**Nación eSports || GeekCity, la comunidad gam!**
