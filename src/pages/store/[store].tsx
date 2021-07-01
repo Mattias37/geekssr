@@ -25,14 +25,9 @@ const Detail = ({ publication }) => {
                     <Row>
                         <Col>
                             <Card>
-                                <Image 
-                                    src={publication.imgCenter} 
-                                    className="card-img-top" 
-                                    alt='product nacion e-sports' 
-                                    layout='responsive'
-                                    width={500}
-                                    height={500}
-                                />
+                                <div style={{ position: "relative", minWidth: "200px", height: "400px" }}>
+                                    <Image id='style-img' src={publication.imgCenter} alt='e-spirts liga logo' layout="fill" objectFit="cover"/>
+                                </div>
                                 <Card.Body>
                                     <h3>{publication.name}</h3>
                                     <h3>{publication.price}</h3>

@@ -82,7 +82,10 @@ export const NewHomeMolecule = (props: Props) => {
           <Col md="4" />
           <Col md="4" />
           <Col id="col-right" md="4">
-            <Image id='style-img' src={props.imgLogo} alt='e-spirts liga logo' layout="fill"/>
+            <div style={{ position: "relative", width: "200px", height: "200px" }}>
+              <Image id='style-img' src={props.imgLogo} alt='e-spirts liga logo' layout="fill"
+            objectFit="contain"/>
+            </div>
             <BannerText>{'FECHA DEL TORNEO:'}</BannerText>
             {<BannerText2>{format(new Date(props.startDate), 'dd/MM/yyyy - h:mm aa')}</BannerText2>}
             <Button2 

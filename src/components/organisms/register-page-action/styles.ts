@@ -86,7 +86,12 @@ export const StyledPriceTopInner = styled.div`
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  padding: 20%;
+  position: relative;
+  &>div{
+    height: 90%;
+    width: 90%;
+    margin: auto !important;
+  }
   &>img{
     height: inherit;
   }

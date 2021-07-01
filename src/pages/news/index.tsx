@@ -51,14 +51,9 @@ const News = ({ news }) => {
                             <Col role="button">
                                 <Row>
                                     <Col>
-                                        <Image 
-                                            src={notice.image} 
-                                            className="img-fluid" 
-                                            alt='news about nación e-sports gamer community'
-                                            layout="responsive"
-                                            width={700}
-                                            height={355}
-                                        />
+                                        <div style={{ position: "relative", minWidth: "200px", height: "200px" }}>
+                                            <Image id='style-img' src={notice.image} alt='e-spirts liga logo' layout="fill" objectFit="cover"/>
+                                        </div>
                                     </Col>
                                     <Col>
                                         <h5>{notice.title}</h5>

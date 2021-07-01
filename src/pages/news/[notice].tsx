@@ -24,14 +24,9 @@ const Detail = ({ publication }) => {
                     <Row>
                         <Col>
                             <Card>
-                                <Image 
-                                    src={publication.image.url} 
-                                    className="card-img-top" 
-                                    alt='image of profuct nación e-sports'
-                                    layout='responsive'
-                                    width={500}
-                                    height={500}
-                                />
+                                <div style={{ position: "relative", minWidth: "200px", height: "400px" }}>
+                                    <Image id='style-img' src={publication.image.url} alt='e-spirts liga logo' layout="fill" objectFit="cover"/>
+                                </div>
                                 <Card.Body>
                                     <h3>{publication.title}</h3>
                                     <div dangerouslySetInnerHTML={{__html: publication.content}}></div>
