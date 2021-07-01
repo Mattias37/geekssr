@@ -4,7 +4,7 @@ import MasterLayout from '../components/templates/MaterLayout';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TagManager from 'react-gtm-module'
-import { TextBody } from './stylesHome';
+import styled from 'styled-components';
 import { useRouter } from 'next/router'
 //Components
 import { Landing } from '../components/molecules/landing';
@@ -18,11 +18,21 @@ import { getHome, getHomePrincipal } from '../redux/layout/action';
 import { getHomeSelector, getHomeSelectorPrincipal } from '../redux/layout/selector';
 import { getSponsors, getPublications } from '../redux/config/action';
 import { getSponsorsSelector, getPublicationsSelector } from '../redux/config/selectors';
+
+const TextBody = styled.button`
+    font-size: 16px;
+    margin-left: 80%;
+    padding: 15px;
+    font-weight: bolder;
+    color: #ff0055;
+    border: 0;
+    background: transparent;
+`;
 interface Params {
   nan: string;
 }
 
-const Home = (props: RouteComponentProps<Params>) => {
+const Home = (props:Params) => {
   const dispatch = useDispatch();
   const router = useRouter()
   const homeSlector = useSelector(getHomeSelector);

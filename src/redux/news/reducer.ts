@@ -1,4 +1,4 @@
-const newsInitialState = {
+const newsInitialState: NoticeState = {
   loading: false,
 }
 

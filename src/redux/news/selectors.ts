@@ -1,6 +1,6 @@
 import { compose } from 'redux';
 
-const rootState = (state: ReduxState) => {
+const rootState = (state: any) => {
   return state.notice;
 };
 

@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react'
 import { Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUser, setUser } from '../../redux/reducers/userReducer';
+import { userMe } from '../../redux/user/action';
+import { getProfile } from '../../redux/user/selectors';
 import { CustomNavbar } from '../../ui/components/navbar/index';
 
 const SignIn = () => {
-    const dispatch = useDispatch();
-    const user = useSelector(getUser);
+    const dispatch = useDispatch(); 
+    const user = useSelector(getProfile);
     
     useEffect(() => {
         setTimeout(() => {
-            dispatch(setUser({
-                id: 2,
-                username: "Milko"
-            }))
+            dispatch(userMe());
         }, 5000);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

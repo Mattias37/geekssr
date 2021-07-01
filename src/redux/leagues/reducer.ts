@@ -38,7 +38,7 @@ export default function reducer(state = leagueInitialState, action) {
           [action.payload]: undefined,
         };
       }
-      return initState;
+      return leagueInitialState;
     }
     case '@@LEAGUE/SET_LEAGUES_SELECTED': {
       return {

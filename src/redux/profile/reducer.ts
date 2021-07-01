@@ -1,4 +1,4 @@
-const userInitialState = {
+const userInitialState: ProfileConfigState = {
   loading: false,
 }
 
@@ -11,7 +11,7 @@ export default function reducer(state = userInitialState, action) {
       };
     }
     case '@@PROFILE/CLEAN_STORE': {
-      return initState;
+      return userInitialState;
     }
     case '@@PROFILE/SET_TEAMS': {
       return {

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import TagManager from 'react-gtm-module';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
 import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head';
 import axios from 'axios'
 import MasterLayout from '../../components/templates/MaterLayout';
@@ -47,11 +47,18 @@ const News = ({ news }) => {
             <Breadcrumb text='Noticias' type={2} />
                 {news.map((notice, i) => (
                     <Row key={i} className="mb-3 border-bottom">
-                        <Link href={`/news/${notice.id}`}>
+                        <Link href={`/news/${notice.id}`} passHref>
                             <Col role="button">
                                 <Row>
                                     <Col>
-                                        <img src={notice.image} className="img-fluid" />
+                                        <Image 
+                                            src={notice.image} 
+                                            className="img-fluid" 
+                                            alt='news about nación e-sports gamer community'
+                                            layout="responsive"
+                                            width={700}
+                                            height={355}
+                                        />
                                     </Col>
                                     <Col>
                                         <h5>{notice.title}</h5>

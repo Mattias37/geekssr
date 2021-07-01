@@ -46,7 +46,7 @@ export const FooterMolecule = () => {
           <Row>
             <Col id="styles-col" md="4" xs="12" lg="4">
               <div id="estyles-logo">
-                <Image id="style-image justify-content-center align-content-center" src='/images/logo blanco.png' fluid />
+                <Image id="style-image justify-content-center align-content-center" src='/images/logo blanco.png' fluid alt="Logo nación e-sports" />
               </div>
             </Col>
             <Col id="styles-col" md="4" xs="12" lg="4">

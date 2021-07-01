@@ -37,10 +37,7 @@ export const RowSliderNews = ({ products }: Props) => {
     <>
         {products && products.map((product) => (
           <SliderProduct key={product._id} className="cursor-pointer" onClick={() =>
-            push(`/transmitions/${product._id}`, {
-              transmission: product
-            })}>
-                {console.log(product)}
+            push(`/transmitions/${product._id}`)}>
               <ProductImg
                 src={product.image}
               >

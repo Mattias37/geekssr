@@ -12,14 +12,14 @@ interface Props {
   message: ToastContent;
   position?: string;
   type?: string;
-  autoClose?: number | boolean;
+  autoClose?: number;
   className?: string;
   transition?: boolean;
   pauseOnFocusLoss?: boolean;
 }
 
 export const showToast = (props: Props) => {
-  let autoClose: number | false | undefined = 2000;
+  let autoClose: number | undefined = 2000;
   if (
     (typeof props.autoClose === 'boolean' && !props.autoClose) ||
     typeof props.autoClose === 'number'

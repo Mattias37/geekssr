@@ -29,7 +29,7 @@ export function InputField(props: Props & FieldLabelProp) {
       <div />
       {props.children}
       {(touched || props.showError) && errors && (
-        <StyledFormLabel date={date} basic color="red" pointing>
+        <StyledFormLabel date={date} color="red">
           {errors}
         </StyledFormLabel>
       )}

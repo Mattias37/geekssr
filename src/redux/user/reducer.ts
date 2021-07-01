@@ -1,4 +1,4 @@
-const userInitialState = {
+const userInitialState: UserState = {
   loading: false,
 }
 

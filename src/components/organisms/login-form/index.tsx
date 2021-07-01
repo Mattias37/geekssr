@@ -46,7 +46,7 @@ export const LoginForm = () => {
         console.log(error);
       }
     },
-    [dispatch],
+    [],
   );
   const handleResetEmail = useCallback(
     async (values) => {
@@ -60,10 +60,10 @@ export const LoginForm = () => {
         console.log(error);
       }
     },
-    [dispatch],
+    [],
   );
   useEffect(() => {
-    if(isAuth) return router.push('/profile')
+    if(isAuth) {router.push('/profile')}
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuth])
   if(screen === 0) {return (
@@ -252,7 +252,9 @@ export const LoginForm = () => {
             }}>
             <RegisterButton disabled={false} onClick={submitForm}>
               {false ? (
-                <Loader active inline size="mini" inverted />
+                <Spinner animation="border" role="status">
+                  <span className="sr-only">Loading...</span>
+                </Spinner>
               ) : (
                 'CAMBIAR CONTRASEÑA'
               )}

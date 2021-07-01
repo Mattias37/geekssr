@@ -2,15 +2,30 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import TagManager from 'react-gtm-module';
 import { useRouter } from 'next/router';
+import styled from 'styled-components';
 import Head from 'next/head';
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import { Banner, BodyContainer } from './styles';
 import MasterLayout from '../../components/templates/MaterLayout';
 import { LeagueProfileTab } from '../../components/organisms/league-profile-tab';
 import { HeaderLeague } from '../../components/organisms/header-league';
 //API
 import { getTeamProfile, getTeams } from '../../redux/profile/action';
 import { getProfile, getAuth } from '../../redux/user/selectors';
+
+const Banner = styled.div`
+  height: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+`;
+
+const BodyContainer = styled.div`
+  min-height: 70vh;
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  color: #000;
+`;
 
 
 const Streaming = () => {    
@@ -27,7 +42,7 @@ const Streaming = () => {
   useEffect(() => {
     dispatch(getTeamProfile());
     dispatch(getTeams());
-  }, []);
+  }, [dispatch]);
   if(!isAuth){
     push('/');
   }

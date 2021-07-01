@@ -95,7 +95,7 @@ export const FormFieldOuter = styled.div`
     line-height: 1;
     letter-spacing: 0.00938em;
   }
-  &>.formikField{
+  &> input{
     background: #FFFFFF00 0% 0% no-repeat padding-box;
     border: 1px solid #D1D1D1;
     opacity: 1;

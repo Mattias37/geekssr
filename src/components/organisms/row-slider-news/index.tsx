@@ -65,7 +65,7 @@ export const RowSliderNews = ({ publications }: Props) => {
                   }
                 }
               })
-              push(`/notices/${product.id}`)
+              push(`/news/${product.id}`)
               }}>
               <ProductImg
                 src={product.image}

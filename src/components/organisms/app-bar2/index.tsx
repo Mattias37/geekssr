@@ -102,7 +102,9 @@ export const AppBar2 = () => {
       })
       router.push(url);
     },
-    [dispatch],
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
   );
 
   return (

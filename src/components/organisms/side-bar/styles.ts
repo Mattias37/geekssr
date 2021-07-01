@@ -1,3 +1,17 @@
+import styled from 'styled-components';
+
+export const SidebarStyled = styled.div`
+  background: white;
+  width: 20vw !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  @media (max-width: 769px) {
+    width: 60vw !important;
+  }
+`;
 /* import styled from 'styled-components';
 import { Menu, Divider } from 'semantic-ui-react';
 import { Image } from 'react-bootstrap';

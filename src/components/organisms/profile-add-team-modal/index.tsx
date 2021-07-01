@@ -55,7 +55,6 @@ export const AddTeamModal = (props: Props) => {
       try {
         const res = await apiClient.ProfileService.createTeam(values);
         console.log(res);
-        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         props.onHide();
       } catch (error) {
         console.log(error);

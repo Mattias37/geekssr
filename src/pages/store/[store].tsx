@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import MasterLayout from '../../components/templates/MaterLayout'
 import axios from 'axios';
 import { Card, Col, Container, Row } from 'react-bootstrap';
@@ -13,18 +14,25 @@ const Detail = ({ publication }) => {
     return (
         <div>
             <Head>
-                <title>Producto</title>
-                <meta property="og:title" content={`Nacion E-Sports | ` + store} />
-                <meta property="og:description" content="" />
-                <meta property="og:image" content="http://localhost:3000/fine.png" />
-                <link rel="icon" href="/favicon.ico" />
+                <title>{publication.name} | Nación eSports</title>
+                <meta property="og:title" content={`Nacion E-Sports | ` + publication.name} />
+                <meta property="og:description" content={publication.name.substring(0, 200)} />
+                <meta property="og:image" content={publication.imgCenter} />
+                <link rel="icon" href="/images/01.png" />
             </Head>
             {publication ? (
                 <Container className="my-5">
                     <Row>
                         <Col>
                             <Card>
-                                <img src={publication.imgCenter} className="card-img-top" />
+                                <Image 
+                                    src={publication.imgCenter} 
+                                    className="card-img-top" 
+                                    alt='product nacion e-sports' 
+                                    layout='responsive'
+                                    width={500}
+                                    height={500}
+                                />
                                 <Card.Body>
                                     <h3>{publication.name}</h3>
                                     <h3>{publication.price}</h3>

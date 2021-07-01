@@ -1,31 +1,31 @@
-export function getInitial(state: ReduxState) {
+export function getInitial(state: any) {
     return state.layout;
   }
-  export function getAppBar(state: ReduxState) {
+  export function getAppBar(state: any) {
     return getInitial(state).appBar;
   }
-  export function getDrawerSidebar(state: ReduxState) {
+  export function getDrawerSidebar(state: any) {
     return getInitial(state).drawerSidebar;
   }
-  export function getCartSidebar(state: ReduxState) {
+  export function getCartSidebar(state: any) {
     return getInitial(state).cartSidebar;
   }
-  export function getSearch(state: ReduxState) {
+  export function getSearch(state: any) {
     return getInitial(state).search;
   }
-  export function getShowDisbaledProduct(state: ReduxState) {
+  export function getShowDisbaledProduct(state: any) {
     return getInitial(state).showDisabledProduct;
   }
-  export function getExitBr(state: ReduxState) {
+  export function getExitBr(state: any) {
     return getInitial(state).exitBr;
   }
-  export function getHomeSelector(state: ReduxState) {
+  export function getHomeSelector(state: any) {
     return getInitial(state).homeSection;
   }
-  export function getHomeSelectorPrincipal(state: ReduxState) {
+  export function getHomeSelectorPrincipal(state: any) {
     return getInitial(state).homeSectionPrincipal;
   }
-  export function getLoadinLayout(state: ReduxState) {
+  export function getLoadinLayout(state: any) {
     return getInitial(state).loading;
   }
     
